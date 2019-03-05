@@ -1,0 +1,192 @@
+@media (max-width: 768px) {
+  body {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 180, 191, 0.8)), to(rgba(76, 158, 198, 0.8))), url("../../assets/shalom-mwenesi-697191-unsplash.jpg") no-repeat;
+    background: linear-gradient(rgba(54, 180, 191, 0.8), rgba(76, 158, 198, 0.8)), url("../../assets/shalom-mwenesi-697191-unsplash.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    text-align: center;
+    padding-top: 30%;
+  }
+  body .logo {
+    font-size: 40px;
+    letter-spacing: 4px;
+    color: #fff;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: sinusoid 4s ease infinite;
+    animation: logo 4s ease infinite;
+  }
+  @-webkit-keyframes logo {
+    0%, 50% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+      animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+    }
+    25% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    75% {
+      -webkit-transform: translateY(15px);
+      transform: translateY(15px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes logo {
+    0%, 50% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+      animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+    }
+    25% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    75% {
+      -webkit-transform: translateY(15px);
+      transform: translateY(15px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  body .quot {
+    color: #fff;
+    font-size: 12px;
+  }
+  body a {
+    color: #fff;
+    padding: 8px 80px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  body a:hover, body a a:focus {
+    background: #fff;
+    color: #05a9b7;
+  }
+  body .signup {
+    padding: 10px 72px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 180, 191, 0.8)), to(rgba(76, 158, 198, 0.8))), url("../../assets/shalom-mwenesi-697191-unsplash.jpg") no-repeat;
+    background: linear-gradient(rgba(54, 180, 191, 0.8), rgba(76, 158, 198, 0.8)), url("../../assets/shalom-mwenesi-697191-unsplash.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 5%;
+  }
+  body .content {
+    margin: 6% auto;
+    display: block;
+    background: transparent;
+    max-width: 50%;
+    padding: 8% 5%;
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  body .content .logo {
+    font-size: 40px;
+    letter-spacing: 4px;
+    color: #fff;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: sinusoid 3s ease infinite;
+    animation: logo 3s ease infinite;
+  }
+  @-webkit-keyframes logo {
+    0%, 50% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+      animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+    }
+    25% {
+      -webkit-transform: translateY(-7px);
+      transform: translateY(-7px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    75% {
+      -webkit-transform: translateY(7px);
+      transform: translateY(7px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes logo {
+    0%, 50% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+      animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+    }
+    25% {
+      -webkit-transform: translateY(-7px);
+      transform: translateY(-7px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    75% {
+      -webkit-transform: translateY(7px);
+      transform: translateY(7px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  body .content .quot {
+    color: #fff;
+    font-size: 10px;
+  }
+  body .content a {
+    color: #fff;
+    padding: 8px 80px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  body .content a:hover, body .content a a:focus {
+    background: #fff;
+    color: #05a9b7;
+  }
+  body .content .signup {
+    padding: 10px 72px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,222 @@
+$colors:(nav: #484859,
+background: #05a9b7,
+primary: #fff,
+secondary: rgba(0, 0, 0, 0.3),
+alt-secondary: rgba(255, 255, 255, 0.6));
+
+$properties:(margin: 0px,
+padding: 0px,
+center-item: 0 auto,
+align-center: center,
+align-right: right,
+align-left: left);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name)
+}
+
+@function tools($tools) {
+  @return map-get($properties, $tools)
+}
+
+$mobile: 768px;
+$desktop:768px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@include mobile{
+  body{
+    background: linear-gradient(rgba(54, 180, 191, 0.8), rgba(76, 158, 198, 0.8)), url("../../assets/shalom-mwenesi-697191-unsplash.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    text-align: center;
+    padding-top: 30%;
+
+    .logo{
+      font-size: 40px;
+      letter-spacing: 4px;
+      color: color(primary);
+      animation-fill-mode: both;
+      -webkit-animation: sinusoid 4s ease infinite;
+      animation: logo 4s ease infinite;
+    }
+    @keyframes logo {
+      0%, 50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: cubic-bezier(.2,.25,.55,1);
+        animation-timing-function: cubic-bezier(.2,.25,.55,1);
+      }
+    25% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+        -webkit-animation-timing-function: cubic-bezier(.45,0,.8,.75);
+        animation-timing-function: cubic-bezier(.45,0,.8,.75);
+      }
+    75% {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+        -webkit-animation-timing-function: cubic-bezier(.45,0,.8,.75);
+        animation-timing-function: cubic-bezier(.45,0,.8,.75);
+    }
+    
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+
+    .quot{
+      color: color(primary);
+      font-size: 12px;
+    }
+
+    a{
+      color: color(primary);
+      padding: 8px 80px;
+      border: 1px solid color(primary);
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 16px;
+      text-transform: uppercase;
+
+      &:hover, a:focus{
+        background: color(primary);
+        color: color(background);
+      }
+    }
+    .signup{
+      padding: 10px 72px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include desktop{
+  body{
+    background: linear-gradient(rgba(54, 180, 191, 0.8), rgba(76, 158, 198, 0.8)), url("../../assets/shalom-mwenesi-697191-unsplash.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 5%;
+
+    .content{
+      margin: 6% auto;
+      display: block;
+      background: transparent;
+      max-width: 50%;
+      padding: 8% 5%;
+      box-shadow: 0px 0px 30px color(secondary);
+      border-radius: 10px;
+
+      .logo{
+        font-size: 40px;
+        letter-spacing: 4px;
+        color: color(primary);
+        animation-fill-mode: both;
+        -webkit-animation: sinusoid 3s ease infinite;
+        animation: logo 3s ease infinite;
+      }
+      @keyframes logo {
+        0%, 50% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          -webkit-animation-timing-function: cubic-bezier(.2,.25,.55,1);
+          animation-timing-function: cubic-bezier(.2,.25,.55,1);
+        }
+      25% {
+          -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+          -webkit-animation-timing-function: cubic-bezier(.45,0,.8,.75);
+          animation-timing-function: cubic-bezier(.45,0,.8,.75);
+        }
+      75% {
+          -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+          -webkit-animation-timing-function: cubic-bezier(.45,0,.8,.75);
+          animation-timing-function: cubic-bezier(.45,0,.8,.75);
+      }
+      
+      100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+      }
+
+      .quot{
+        color: color(primary);
+        font-size: 10px;
+      }
+
+      a{
+        color: color(primary);
+        padding: 8px 80px;
+        border: 1px solid color(primary);
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        transition: 0.3s ease-in-out;
+  
+        &:hover, a:focus{
+          background: color(primary);
+          color: color(background);
+        }
+      }
+      .signup{
+        padding: 10px 72px;
+      }
+    }
+  }
+}

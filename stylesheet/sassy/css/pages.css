@@ -1,0 +1,218 @@
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #fff;
+    text-align: center;
+    padding-top: 20%;
+  }
+  body .logo {
+    font-size: 40px;
+    letter-spacing: 4px;
+    color: #05a9b7;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: sinusoid 4s ease infinite;
+    animation: logo 4s ease infinite;
+  }
+  @-webkit-keyframes logo {
+    0%, 50% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+      animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+    }
+    25% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    75% {
+      -webkit-transform: translateY(15px);
+      transform: translateY(15px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes logo {
+    0%, 50% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+      animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+    }
+    25% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    75% {
+      -webkit-transform: translateY(15px);
+      transform: translateY(15px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  body i {
+    color: #05a9b7;
+    font-size: 20px;
+    margin-right: 1%;
+  }
+  body input[type="text"], body input[type="password"], body input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #05a9b7;
+    outline: inherit;
+    letter-spacing: 2px;
+    color: #05a9b7;
+  }
+  body input[type="submit"] {
+    color: #fff;
+    padding: 8px 80px;
+    border: 1px solid #05a9b7;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #05a9b7;
+  }
+  body .extra a {
+    color: #05a9b7;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  body .extra p {
+    color: #05a9b7;
+  }
+  body .extra p .link {
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #fff;
+    text-align: center;
+    padding-top: 10%;
+  }
+  body .logo {
+    font-size: 40px;
+    letter-spacing: 4px;
+    color: #05a9b7;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation: sinusoid 4s ease infinite;
+    animation: logo 4s ease infinite;
+  }
+  @-webkit-keyframes logo {
+    0%, 50% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+      animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+    }
+    25% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    75% {
+      -webkit-transform: translateY(15px);
+      transform: translateY(15px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes logo {
+    0%, 50% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+      animation-timing-function: cubic-bezier(0.2, 0.25, 0.55, 1);
+    }
+    25% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    75% {
+      -webkit-transform: translateY(15px);
+      transform: translateY(15px);
+      -webkit-animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+      animation-timing-function: cubic-bezier(0.45, 0, 0.8, 0.75);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  body i {
+    color: #05a9b7;
+    font-size: 20px;
+    margin-right: 1%;
+  }
+  body input[type="text"], body input[type="password"], body input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #05a9b7;
+    width: 40%;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #05a9b7;
+  }
+  body input[type="text"]:focus, body input[type="password"]:focus, body input[type="email"]:focus {
+    outline: inherit;
+  }
+  body input[type="submit"] {
+    color: #fff;
+    padding: 8px 80px;
+    border: 1px solid #05a9b7;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #05a9b7;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  body input[type="submit"]:hover {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #05a9b7;
+  }
+  body .extra a {
+    color: #05a9b7;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  body .extra p {
+    color: #05a9b7;
+  }
+  body .extra p .link {
+    font-weight: 600;
+  }
+}
+/*# sourceMappingURL=pages.css.map */

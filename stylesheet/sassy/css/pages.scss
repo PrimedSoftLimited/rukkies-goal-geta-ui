@@ -1,0 +1,250 @@
+$colors:(nav: #484859,
+background: #05a9b7,
+primary: #fff,
+secondary: rgba(0, 0, 0, 0.3),
+alt-secondary: rgba(255, 255, 255, 0.6));
+
+$properties:(margin: 0px,
+padding: 0px,
+center-item: 0 auto,
+align-center: center,
+align-right: right,
+align-left: left);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name)
+}
+
+@function tools($tools) {
+  @return map-get($properties, $tools)
+}
+
+$mobile: 768px;
+$desktop:768px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@include mobile{
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: color(primary);
+        text-align: center;
+        padding-top: 20%;
+
+        .logo{
+            font-size: 40px;
+            letter-spacing: 4px;
+            color: color(background);
+            animation-fill-mode: both;
+            -webkit-animation: sinusoid 4s ease infinite;
+            animation: logo 4s ease infinite;
+          }
+            @keyframes logo {
+            0%, 50% {
+              -webkit-transform: translateY(0);
+              transform: translateY(0);
+              -webkit-animation-timing-function: cubic-bezier(.2,.25,.55,1);
+              animation-timing-function: cubic-bezier(.2,.25,.55,1);
+            }
+            25% {
+              -webkit-transform: translateY(-15px);
+              transform: translateY(-15px);
+              -webkit-animation-timing-function: cubic-bezier(.45,0,.8,.75);
+              animation-timing-function: cubic-bezier(.45,0,.8,.75);
+            }
+            75% {
+              -webkit-transform: translateY(15px);
+              transform: translateY(15px);
+              -webkit-animation-timing-function: cubic-bezier(.45,0,.8,.75);
+              animation-timing-function: cubic-bezier(.45,0,.8,.75);
+            }
+          
+            100% {
+              -webkit-transform: translateY(0);
+              transform: translateY(0);
+            }
+        }
+
+        i{
+            color: color(background);
+            font-size: 20px;
+            margin-right: 1%;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"]{
+            border: none;
+            border-bottom: 1px solid color(background);
+            outline: inherit;
+            letter-spacing: 2px;
+            color: color(background);
+        }
+
+        input[type="submit"]{
+            color: color(primary);
+            padding: 8px 80px;
+            border: 1px solid color(background);
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            background: color(background);
+        }
+
+        .extra{
+            a{
+                color: color(background);
+                text-decoration: none;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+
+            p{
+                color: color(background);
+
+                .link{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include desktop{
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: color(primary);
+        text-align: center;
+        padding-top: 10%;
+
+        .logo{
+            font-size: 40px;
+            letter-spacing: 4px;
+            color: color(background);
+            animation-fill-mode: both;
+            -webkit-animation: sinusoid 4s ease infinite;
+            animation: logo 4s ease infinite;
+          }
+            @keyframes logo {
+            0%, 50% {
+              -webkit-transform: translateY(0);
+              transform: translateY(0);
+              -webkit-animation-timing-function: cubic-bezier(.2,.25,.55,1);
+              animation-timing-function: cubic-bezier(.2,.25,.55,1);
+            }
+            25% {
+              -webkit-transform: translateY(-15px);
+              transform: translateY(-15px);
+              -webkit-animation-timing-function: cubic-bezier(.45,0,.8,.75);
+              animation-timing-function: cubic-bezier(.45,0,.8,.75);
+            }
+            75% {
+              -webkit-transform: translateY(15px);
+              transform: translateY(15px);
+              -webkit-animation-timing-function: cubic-bezier(.45,0,.8,.75);
+              animation-timing-function: cubic-bezier(.45,0,.8,.75);
+            }
+          
+            100% {
+              -webkit-transform: translateY(0);
+              transform: translateY(0);
+            }
+        }
+
+        i{
+            color: color(background);
+            font-size: 20px;
+            margin-right: 1%;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"]{
+            border: none;
+            border-bottom: 1px solid color(background);
+            width: 40%;
+            letter-spacing: 2px;
+            font-size: 20px;
+            color: color(background);
+
+            &:focus{
+                outline: inherit;
+            }
+        }
+
+        input[type="submit"]{
+            color: color(primary);
+            padding: 8px 80px;
+            border: 1px solid color(background);
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            background: color(background);
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover{
+                background: color(primary);
+                border: 1px solid color(primary);
+                color: color(background);
+            }
+        }
+
+        .extra{
+            a{
+                color: color(background);
+                text-decoration: none;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+
+            p{
+                color: color(background);
+
+                .link{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
